@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { MdOutlineTextsms } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const CheckInButtons = ({ friend }) => {
   const { timeLines, setTimeLines } = useContext(TimeLineContext);
@@ -15,6 +16,8 @@ const CheckInButtons = ({ friend }) => {
       date: Date.now(),
     };
     setTimeLines([...timeLines, newTimeLines]);
+
+    toast.success(`Timeline added for ${friend.name}`)
   };
 
   return (

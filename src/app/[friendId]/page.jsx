@@ -1,5 +1,6 @@
 import CheckInButtons from "@/component/CheckInButtons";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { PiArchiveBold } from "react-icons/pi";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
@@ -11,6 +12,10 @@ const Friend = async ({ params }) => {
   const users = await res.json();
 
   const friend = users.find((user) => user.id === Number(friendId));
+
+  if(!friend){
+    notFound()
+  }
   const {
     id,
     name,
