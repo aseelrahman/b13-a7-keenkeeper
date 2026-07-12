@@ -1,8 +1,6 @@
+import CheckInButtons from "@/component/CheckInButtons";
 import Image from "next/image";
-import { BiPhoneCall } from "react-icons/bi";
 import { FaRegTrashAlt } from "react-icons/fa";
-import { HiOutlineVideoCamera } from "react-icons/hi";
-import { MdOutlineTextsms } from "react-icons/md";
 import { PiArchiveBold } from "react-icons/pi";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 
@@ -115,31 +113,7 @@ const Friend = async ({ params }) => {
                 <span className="font-semibold text-[18px]">{goal} days</span>
               </div>
             </div>
-            <div className="bg-[#FFFFFF] rounded-md shadow my-4 p-4 flex flex-col gap-4">
-              <div className="text-[#244D3F] text-[20px] font-medium">
-                Quick Check-In
-              </div>
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-[#F8FAFC] p-4 rounded-md flex flex-col  items-center gap-2 hover:scale-105 transition-transform duration-200">
-                  <span className="text-3xl">
-                    <BiPhoneCall />
-                  </span>
-                  <span className="text-[18px]">Call</span>
-                </div>
-                <div className="bg-[#F8FAFC] p-4 rounded-md flex flex-col  items-center gap-2 hover:scale-105 transition-transform duration-200">
-                  <span className="text-3xl">
-                    <MdOutlineTextsms />
-                  </span>
-                  <span className="text-[18px]">Text</span>
-                </div>
-                <div className="bg-[#F8FAFC] p-4 rounded-md flex flex-col  items-center gap-2 hover:scale-105 transition-transform duration-200">
-                  <span className="text-3xl">
-                    <HiOutlineVideoCamera />
-                  </span>
-                  <span className="text-[18px]">Video</span>
-                </div>
-              </div>
-            </div>
+            <CheckInButtons friend={friend} />
           </div>
         </div>
       </div>
