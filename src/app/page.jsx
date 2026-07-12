@@ -1,4 +1,5 @@
 import FriendCard from "@/component/FriendCard";
+import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
 
 export default async function Home() {
@@ -47,7 +48,7 @@ export default async function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 m-10 sm:m-5">
           {
-            users.map(user => <FriendCard key={user.id} user={user}/>)
+            users.map(user => <Link href={`/${user.id}`} key={user.id}><FriendCard  user={user}/></Link>)
           }
         </div>
       </div>

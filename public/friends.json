@@ -7,7 +7,7 @@
     "days_since_contact": 18,
     "status": "overdue",
     "tags": ["hobby"],
-    "bio": "Roommates for 3 years at NYU. She's now a UX designer in Seattle and we still text about bad reality TV.",
+    "bio": "Roommates for 3 years at NYU.",
     "goal": 14,
     "next_due_date": "2025-07-05"
   },
@@ -19,7 +19,7 @@
     "days_since_contact": 5,
     "status": "on-track",
     "tags": ["work", "hobby"],
-    "bio": "Former coworker from my first job. We hit the gym together every Saturday morning when schedules line up.",
+    "bio": "Former coworker from my first job.",
     "goal": 7,
     "next_due_date": "2025-07-18"
   },
@@ -31,7 +31,7 @@
     "days_since_contact": 25,
     "status": "overdue",
     "tags": ["family"],
-    "bio": "Known each other since 3rd grade. Her parents and mine are still neighbors back home.",
+    "bio": "Known each other since 3rd grade.",
     "goal": 21,
     "next_due_date": "2025-06-28"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 10,
     "status": "almost due",
     "tags": ["travel", "hobby"],
-    "bio": "Met in a shared dorm during freshman year. Love hiking together and planning weekend backpacking trips.",
+    "bio": "Met in a shared dorm during freshman year.",
     "goal": 14,
     "next_due_date": "2025-07-15"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 2,
     "status": "on-track",
     "tags": ["hobby"],
-    "bio": "We started a two-person book club during the pandemic and never stopped. Currently reading through Toni Morrison's novels.",
+    "bio": "We started a two-person book club during the pandemic and never stopped.",
     "goal": 10,
     "next_due_date": "2025-07-20"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 40,
     "status": "overdue",
     "tags": ["travel"],
-    "bio": "Study abroad buddy from our semester in Dublin. We promised to visit each other's home countries and are way overdue.",
+    "bio": "Study abroad buddy from our semester in Dublin.",
     "goal": 30,
     "next_due_date": "2025-06-10"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 8,
     "status": "almost due",
     "tags": ["work"],
-    "bio": "My mentor at my first tech internship. She still gives me great career advice over coffee calls.",
+    "bio": "My mentor at my first tech internship.",
     "goal": 10,
     "next_due_date": "2025-07-14"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 3,
     "status": "on-track",
     "tags": ["family", "hobby"],
-    "bio": "Lives two doors down. We grill out together most weekends and he waters my plants when I travel.",
+    "bio": "Lives two doors down.",
     "goal": 7,
     "next_due_date": "2025-07-19"
   }
