@@ -1,4 +1,5 @@
 import CheckInButtons from "@/component/CheckInButtons";
+import { headers } from "next/headers";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { FaRegTrashAlt } from "react-icons/fa";
@@ -8,13 +9,17 @@ import { RiNotificationSnoozeLine } from "react-icons/ri";
 const Friend = async ({ params }) => {
   const { friendId } = await params;
 
-  const res = await fetch("http://localhost:3000/friends.json");
+  const headersList = await headers();
+  const host = headersList.get("host");
+  const protocol = host.includes("localhost") ? "http" : "https";
+
+  const res = await fetch(`${protocol}://${host}/friends.json`);
   const users = await res.json();
 
   const friend = users.find((user) => user.id === Number(friendId));
 
-  if(!friend){
-    notFound()
+  if (!friend) {
+    notFound();
   }
   const {
     id,
@@ -64,7 +69,9 @@ const Friend = async ({ params }) => {
                 })}
               </ul>
 
-              <span className="text-[#64748B] text-[16px]">&quot;{bio}&quot;</span>
+              <span className="text-[#64748B] text-[16px]">
+                &quot;{bio}&quot;
+              </span>
               <span className="text-[#64748B] text-sm">Preferred: {email}</span>
             </div>
             <div className=" text-center space-y-2 flex flex-col my-4">

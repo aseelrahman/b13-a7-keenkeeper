@@ -1,11 +1,16 @@
 import FriendCard from "@/component/FriendCard";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
 
 export default async function Home() {
 
-  const res = await fetch("http://localhost:3000/friends.json")
-  const users = await res.json()
+ const headersList = await headers();
+  const host = headersList.get("host");
+  const protocol = host.includes("localhost") ? "http" : "https";
+
+  const res = await fetch(`${protocol}://${host}/friends.json`);
+  const users = await res.json();
   
   
   return (
